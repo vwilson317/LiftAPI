@@ -1,0 +1,14 @@
+c:\users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI\obj\Debug\LiftAPI.csprojResolveAssemblyReference.cache
+c:\users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI\bin\LiftAPI.dll.config
+c:\users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI\bin\LiftAPI.dll
+c:\users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI\bin\LiftAPI.pdb
+c:\users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI\bin\Newtonsoft.Json.dll
+c:\users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI\bin\System.Net.Http.Formatting.dll
+c:\users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI\bin\System.Web.Http.dll
+c:\users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI\bin\System.Web.Http.WebHost.dll
+c:\users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI\bin\Newtonsoft.Json.xml
+c:\users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI\bin\System.Net.Http.Formatting.xml
+c:\users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI\bin\System.Web.Http.xml
+c:\users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI\bin\System.Web.Http.WebHost.xml
+c:\users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI\obj\Debug\LiftAPI.dll
+c:\users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI\obj\Debug\LiftAPI.pdb

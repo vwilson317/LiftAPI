@@ -1,0 +1,15 @@
+c:\users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI.Tests\bin\Debug\LiftAPI.Tests.dll
+c:\users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI.Tests\bin\Debug\LiftAPI.Tests.pdb
+c:\users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI.Tests\bin\Debug\LiftAPI.dll
+c:\users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI.Tests\bin\Debug\System.Web.Http.dll
+c:\users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI.Tests\bin\Debug\System.Web.Http.WebHost.dll
+c:\users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI.Tests\bin\Debug\System.Net.Http.Formatting.dll
+c:\users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI.Tests\bin\Debug\Newtonsoft.Json.dll
+c:\users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI.Tests\bin\Debug\LiftAPI.pdb
+c:\users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI.Tests\bin\Debug\System.Web.Http.xml
+c:\users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI.Tests\bin\Debug\System.Web.Http.WebHost.xml
+c:\users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI.Tests\bin\Debug\System.Net.Http.Formatting.xml
+c:\users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI.Tests\bin\Debug\Newtonsoft.Json.xml
+c:\users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI.Tests\obj\Debug\LiftAPI.Tests.csprojResolveAssemblyReference.cache
+c:\users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI.Tests\obj\Debug\LiftAPI.Tests.dll
+c:\users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI.Tests\obj\Debug\LiftAPI.Tests.pdb
