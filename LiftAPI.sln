@@ -7,6 +7,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiftAPI", "LiftAPI\LiftAPI.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiftAPI.Tests", "LiftAPI.Tests\LiftAPI.Tests.csproj", "{ABE4721E-8C6D-403A-B40F-959EBF5A3CB3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{FD750647-035B-4B27-B4B0-C462843AB703}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{C1AF42FD-65EA-405D-8925-A732516956D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryService", "RepositoryService\RepositoryService.csproj", "{67D177B6-5A16-4293-81EC-277B0F2288D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIModels", "APIModels\APIModels.csproj", "{42B1D927-E588-47C9-A706-9A548F18C41E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoC", "IoC\IoC.csproj", "{4834FF71-5A51-490F-97E3-F0F05ABEC7DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,8 +31,31 @@ Global
 		{ABE4721E-8C6D-403A-B40F-959EBF5A3CB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABE4721E-8C6D-403A-B40F-959EBF5A3CB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABE4721E-8C6D-403A-B40F-959EBF5A3CB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD750647-035B-4B27-B4B0-C462843AB703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD750647-035B-4B27-B4B0-C462843AB703}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD750647-035B-4B27-B4B0-C462843AB703}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD750647-035B-4B27-B4B0-C462843AB703}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1AF42FD-65EA-405D-8925-A732516956D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1AF42FD-65EA-405D-8925-A732516956D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1AF42FD-65EA-405D-8925-A732516956D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1AF42FD-65EA-405D-8925-A732516956D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67D177B6-5A16-4293-81EC-277B0F2288D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67D177B6-5A16-4293-81EC-277B0F2288D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67D177B6-5A16-4293-81EC-277B0F2288D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67D177B6-5A16-4293-81EC-277B0F2288D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42B1D927-E588-47C9-A706-9A548F18C41E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42B1D927-E588-47C9-A706-9A548F18C41E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42B1D927-E588-47C9-A706-9A548F18C41E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42B1D927-E588-47C9-A706-9A548F18C41E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4834FF71-5A51-490F-97E3-F0F05ABEC7DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4834FF71-5A51-490F-97E3-F0F05ABEC7DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4834FF71-5A51-490F-97E3-F0F05ABEC7DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4834FF71-5A51-490F-97E3-F0F05ABEC7DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35;packages\Unity.Interception.2.1.505.0\lib\NET35;packages\EnterpriseLibrary.Common.5.0.505.0\lib\NET35
 	EndGlobalSection
 EndGlobal

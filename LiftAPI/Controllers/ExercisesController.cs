@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
+﻿using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using LiftAPI.Models;
+using APIModels;
 using LiftAPI.Util;
+using RepositoryService;
 
 namespace LiftAPI.Controllers
 {
@@ -13,6 +11,12 @@ namespace LiftAPI.Controllers
     public class ExercisesController : ApiController
     {
         MockData mockData = new MockData();
+        private IExerciseRepositoryService _repositoryService;
+
+        public ExercisesController(IExerciseRepositoryService repositoryService)
+        {
+            _repositoryService = repositoryService;
+        }
 
         [HttpGet]
         [Route("")]
@@ -35,6 +39,14 @@ namespace LiftAPI.Controllers
         public HttpResponseMessage UpdateExercise([FromBody] ExerciseModel exercise)
         {
             return Request.CreateResponse(HttpStatusCode.OK, exercise);
+        }
+
+        [HttpDelete]
+        [Route("{id:int}")]
+        public HttpResponseMessage Delete(int id)
+        {
+            //Reposority.Delete(id)
+            return Request.CreateResponse(HttpStatusCode.OK);
         }
     }
 }

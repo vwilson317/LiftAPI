@@ -1,17 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
+﻿using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using LiftAPI.Models;
+using APIModels;
 using LiftAPI.Util;
+using RepositoryService;
+using RepositoryService.Log;
 
 namespace LiftAPI.Controllers
 {
     public class LogsController : ApiController
     {
         MockData mockData = new MockData();
+        private ILogRepositoryService _service;
+
+        public LogsController(ILogRepositoryService service)
+        {
+            _service = service;
+        }
 
         [HttpGet]
         [Route("api/users/{id:int}/logs/{exerciseId}")]
