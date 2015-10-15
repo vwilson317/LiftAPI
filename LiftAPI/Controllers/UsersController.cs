@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
+﻿using System.Net;
 using System.Net.Http;
-using System.Web;
 using System.Web.Http;
-using LiftAPI.Models;
+using APIModels;
 using LiftAPI.Util;
+using RepositoryService;
 
 namespace LiftAPI.Controllers
 {
@@ -14,6 +11,12 @@ namespace LiftAPI.Controllers
     public class UsersController : ApiController
     {
         private MockData mockData = new MockData();
+        private IUserRepositoryService _service;
+
+        public UsersController(IUserRepositoryService service)
+        {
+            _service = service;
+        }
 
         [HttpGet]
         [Route("{name:alpha}")]

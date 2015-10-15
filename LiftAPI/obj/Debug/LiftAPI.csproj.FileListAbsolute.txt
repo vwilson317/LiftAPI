@@ -12,3 +12,17 @@ c:\users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI\bin\Syste
 c:\users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI\bin\System.Web.Http.WebHost.xml
 c:\users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI\obj\Debug\LiftAPI.dll
 c:\users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI\obj\Debug\LiftAPI.pdb
+C:\Users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI\bin\APIModels.dll
+C:\Users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI\bin\RepositoryService.dll
+C:\Users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI\bin\Repository.dll
+C:\Users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI\bin\Domain.dll
+C:\Users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI\bin\APIModels.pdb
+C:\Users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI\bin\RepositoryService.pdb
+C:\Users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI\bin\Repository.pdb
+C:\Users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI\bin\Domain.pdb
+C:\Users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI\bin\Autofac.dll
+C:\Users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI\bin\Autofac.Integration.WebApi.dll
+C:\Users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI\bin\IoC.dll
+C:\Users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI\bin\IoC.pdb
+C:\Users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI\bin\Autofac.xml
+C:\Users\vwilson\documents\visual studio 2013\Projects\LiftAPI\LiftAPI\bin\Autofac.Integration.WebApi.xml

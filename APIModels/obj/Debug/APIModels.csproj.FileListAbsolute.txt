@@ -1,0 +1,5 @@
+C:\Users\vwilson\documents\visual studio 2013\Projects\LiftAPI\APIModels\bin\Debug\APIModels.dll
+C:\Users\vwilson\documents\visual studio 2013\Projects\LiftAPI\APIModels\bin\Debug\APIModels.pdb
+C:\Users\vwilson\documents\visual studio 2013\Projects\LiftAPI\APIModels\obj\Debug\APIModels.dll
+C:\Users\vwilson\documents\visual studio 2013\Projects\LiftAPI\APIModels\obj\Debug\APIModels.pdb
+C:\Users\vwilson\documents\visual studio 2013\Projects\LiftAPI\APIModels\obj\Debug\APIModels.csprojResolveAssemblyReference.cache

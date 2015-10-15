@@ -1,17 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using LiftAPI.Models;
+using APIModels;
 using LiftAPI.Util;
+using RepositoryService;
+using RepositoryService.Workout;
 
 namespace LiftAPI.Controllers
 {
     public class WorkoutsController : ApiController
     {
         private MockData mockData = new MockData();
+        private IWorkoutRepositoryService _service;
+
+        public WorkoutsController(IWorkoutRepositoryService service)
+        {
+            _service = service;
+        }
 
         [HttpGet]
         [Route("api/users/{id:int}/workouts")]
