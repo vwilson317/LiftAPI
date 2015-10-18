@@ -6,7 +6,7 @@ using RepositoryService.User;
 
 namespace RepositoryService
 {
-    public interface IUserRepositoryService : IRepositoryBaseService<UserModel>
+    public interface IUserRepositoryService : IRepositoryBaseService<UserResource>
     {
         
     }
@@ -22,12 +22,12 @@ namespace RepositoryService
             _mapper = mapper;
         }
 
-        public IEnumerable<UserModel> GetAll()
+        public IEnumerable<UserResource> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public UserModel Get(int id)
+        public UserResource Get(int id)
         {
             throw new NotImplementedException();
         }
@@ -37,7 +37,7 @@ namespace RepositoryService
             throw new NotImplementedException();
         }
 
-        public UserModel Update(int id)
+        public UserResource Update(int id)
         {
             throw new NotImplementedException();
         }

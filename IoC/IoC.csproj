@@ -83,9 +83,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\APIModels\APIModels.csproj">
+    <ProjectReference Include="..\APIModels\Resources.csproj">
       <Project>{42b1d927-e588-47c9-a706-9a548f18c41e}</Project>
-      <Name>APIModels</Name>
+      <Name>Resources</Name>
     </ProjectReference>
     <ProjectReference Include="..\Domain\Domain.csproj">
       <Project>{fd750647-035b-4b27-b4b0-c462843ab703}</Project>

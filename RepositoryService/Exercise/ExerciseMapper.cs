@@ -5,7 +5,7 @@ using RepositoryService.Workout;
 
 namespace RepositoryService.Exercise
 {
-    public interface IExerciseMapper : IMapper<Domain.Exercise, ExerciseModel>
+    public interface IExerciseMapper : IMapper<Domain.Exercise, ExerciseResource>
     {
 
     }
@@ -21,12 +21,12 @@ namespace RepositoryService.Exercise
             _mapper = mapper;
         }
 
-        public Domain.Exercise CreateEntity(ExerciseModel model)
+        public Domain.Exercise CreateEntity(ExerciseResource model)
         {
             throw new NotImplementedException();
         }
 
-        public ExerciseModel CreateModel(Domain.Exercise entity)
+        public ExerciseResource CreateModel(Domain.Exercise entity)
         {
             throw new NotImplementedException();
         }

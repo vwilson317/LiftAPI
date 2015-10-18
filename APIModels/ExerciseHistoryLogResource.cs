@@ -2,7 +2,7 @@
 
 namespace APIModels
 {
-    public class LogModel : ModelBase
+    public class LogResource : ResourceBase
     {
         public DateTime CompletedDate { get; set; }
         public int Weight { get; set; }
@@ -12,7 +12,7 @@ namespace APIModels
 
         //Use object instead of ids
         //If app runs slowly then convert nested models to ids
-        public ExerciseModel Exercise { get; set; }
+        public ExerciseResource Exercise { get; set; }
 
         public int UserId { get; set; }
     }

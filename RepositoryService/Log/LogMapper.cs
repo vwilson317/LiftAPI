@@ -4,19 +4,19 @@ using Domain;
 
 namespace RepositoryService.Workout
 {
-    public interface ILogMapper : IMapper<WorkoutRoutine, LogModel>
+    public interface ILogMapper : IMapper<WorkoutRoutine, LogResource>
     {
 
     }
 
     public class LogMapper : ILogMapper
     {
-        public WorkoutRoutine CreateEntity(LogModel model)
+        public WorkoutRoutine CreateEntity(LogResource model)
         {
             throw new NotImplementedException();
         }
 
-        public LogModel CreateModel(WorkoutRoutine entity)
+        public LogResource CreateModel(WorkoutRoutine entity)
         {
             throw new NotImplementedException();
         }

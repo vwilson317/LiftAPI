@@ -36,7 +36,7 @@ namespace LiftAPI.Controllers
 
         [HttpPost]
         [Route("api/users/{userId:int}/exercises/{exerciseId:int}/logs")]
-        public HttpResponseMessage GetHistoryLogs([FromBody] LogModel log)
+        public HttpResponseMessage GetHistoryLogs([FromBody] LogResource log)
         {
             log.Id = 1;
             return Request.CreateResponse(HttpStatusCode.Created, log);

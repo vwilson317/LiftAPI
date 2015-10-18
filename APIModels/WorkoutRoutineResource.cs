@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace APIModels
 {
-    public class WorkoutRoutineModel : ModelBase
+    public class WorkoutRoutineResource : ResourceBase
     {
-        public List<ConfiguredExerciseModel> ConfiguredExercises { get; set; }
+        public List<ConfiguredExerciseResource> ConfiguredExercises { get; set; }
         //value will determine where the Workout Routine will be displayed in the list
         public int SortOrderRank { get; set; }
 

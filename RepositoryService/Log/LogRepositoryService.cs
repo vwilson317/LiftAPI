@@ -6,7 +6,7 @@ using RepositoryService.Workout;
 
 namespace RepositoryService.Log
 {
-    public interface ILogRepositoryService : IRepositoryBaseService<LogModel>
+    public interface ILogRepositoryService : IRepositoryBaseService<LogResource>
     {
         
     }
@@ -22,12 +22,12 @@ namespace RepositoryService.Log
             _mapper = mapper;
         }
 
-        public IEnumerable<LogModel> GetAll()
+        public IEnumerable<LogResource> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public LogModel Get(int id)
+        public LogResource Get(int id)
         {
             throw new NotImplementedException();
         }
@@ -37,7 +37,7 @@ namespace RepositoryService.Log
             throw new NotImplementedException();
         }
 
-        public LogModel Update(int id)
+        public LogResource Update(int id)
         {
             throw new NotImplementedException();
         }

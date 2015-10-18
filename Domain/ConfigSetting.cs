@@ -2,7 +2,7 @@
 
 namespace Domain
 {
-    public class ConfigSetting : DomainBase
+    public class PreferenceSetting : DomainBase
     {
         public char WeightUnits { get; set; }
         public DayOfWeek WorkoutStartOfWeek { get; set; }

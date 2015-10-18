@@ -2,7 +2,7 @@
 
 namespace APIModels
 {
-    public class ConfigSettingModel : ModelBase
+    public class ConfigSettingResource : ResourceBase
     {
         public char WeightUnits { get; set; }
         public DayOfWeek WorkoutStartOfWeek { get; set; }

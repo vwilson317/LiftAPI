@@ -34,7 +34,7 @@ namespace LiftAPI.Controllers
 
         [HttpPost]
         [Route("")]
-        public HttpResponseMessage CreateUser([FromBody] UserModel user)
+        public HttpResponseMessage CreateUser([FromBody] UserResource user)
         {
             user.Id = 1;
             return Request.CreateResponse(HttpStatusCode.Created, user);
@@ -42,7 +42,7 @@ namespace LiftAPI.Controllers
 
         [HttpPut]
         [Route("{id:int}")]
-        public HttpResponseMessage UpdateUser([FromBody] UserModel user)
+        public HttpResponseMessage UpdateUser([FromBody] UserResource user)
         {
             return Request.CreateResponse(HttpStatusCode.OK, user);
         }

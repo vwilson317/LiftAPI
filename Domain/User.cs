@@ -1,11 +1,8 @@
 ﻿namespace Domain
 {
-    public class User : DomainBase
+    public class User : NamedDomainObj
     {
-        public string EmailAddress { get; set; }
-        //TODO: should be encrypted
-        public string Password { get; set; }
-        public ConfigSetting ConfigSetting { get; set; }
-
+        public PreferenceSetting PreferenceSetting { get; set; }
+        public AccountInfo AccountInfo { get; set; }
     }
 }

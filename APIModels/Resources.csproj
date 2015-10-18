@@ -39,16 +39,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConfigSettingModel.cs" />
-    <Compile Include="ConfiguredExerciseModel.cs" />
-    <Compile Include="ExerciseHistoryLogModel.cs" />
-    <Compile Include="ExerciseModel.cs" />
+    <Compile Include="ConfigSettingResource.cs" />
+    <Compile Include="ConfiguredExerciseResource.cs" />
+    <Compile Include="ExerciseHistoryLogResource.cs" />
+    <Compile Include="ExerciseResource.cs" />
     <Compile Include="IocAssemblyStarter.cs" />
     <Compile Include="ModelBase.cs" />
-    <Compile Include="MuscleGroupModel.cs" />
+    <Compile Include="MuscleGroupResource.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserModel.cs" />
-    <Compile Include="WorkoutRoutineModel.cs" />
+    <Compile Include="UserResource.cs" />
+    <Compile Include="WorkoutRoutineResource.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
