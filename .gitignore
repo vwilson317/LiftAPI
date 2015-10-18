@@ -5,3 +5,6 @@ Repository/obj/Debug/
 RepositoryService/obj/Debug/
 packages/
 ../../Debug
+IoC/obj/
+LiftAPI.Tests/bin/Debug/Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+LiftAPI.Tests/obj/
