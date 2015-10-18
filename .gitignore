@@ -1,2 +1,7 @@
 APIModels/obj/Debug/
+Domain/obj/Debug/
+LiftApi/obj/Debug/
+Repository/obj/Debug/
+RepositoryService/obj/Debug/
+packages/
 ../../Debug
