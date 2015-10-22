@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using APIModels;
+using System.Linq;
 using Repository;
-using RepositoryService.User;
+using Resources;
 
-namespace RepositoryService
+namespace RepositoryService.User
 {
     public interface IUserRepositoryService : IRepositoryBaseService<UserResource>
     {
@@ -14,20 +13,25 @@ namespace RepositoryService
     public class UserRepositoryService : IUserRepositoryService
     {
         private IUserMapper _mapper;
-        private IUserRepository _repo;
+        private IRepository<Domain.User, object> _repo;
 
-        public UserRepositoryService(IUserRepository repo, IUserMapper mapper)
+        public UserRepositoryService(IRepository<Domain.User,object> repo, IUserMapper mapper)
         {
             _repo = repo;
             _mapper = mapper;
         }
 
-        public IEnumerable<UserResource> GetAll()
+        public void Create(UserResource entity)
         {
             throw new NotImplementedException();
         }
 
-        public UserResource Get(int id)
+        public void Update(UserResource entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Delete(UserResource entity)
         {
             throw new NotImplementedException();
         }
@@ -37,7 +41,17 @@ namespace RepositoryService
             throw new NotImplementedException();
         }
 
-        public UserResource Update(int id)
+        public void SaveOrUpdate(UserResource entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public UserResource Get(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IQueryable<UserResource> GetAll()
         {
             throw new NotImplementedException();
         }

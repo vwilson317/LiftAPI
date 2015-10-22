@@ -1,4 +1,4 @@
-﻿namespace APIModels
+﻿namespace Resources
 {
     public class UserResource : ResourceBase
     {

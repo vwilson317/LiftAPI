@@ -1,10 +1,10 @@
 ﻿namespace Domain
 {
-    public class ConfiguredExercise : DomainBase
+    public class ConfiguredExercise : Entity
     {
-        public int Weight { get; set; }
-        public int Reps { get; set; }
-        public int Sets { get; set; }
-        public Exercise Exercise { get; set; }
+        public virtual int Weight { get; set; }
+        public virtual int Reps { get; set; }
+        public virtual int Sets { get; set; }
+        public virtual Exercise Exercise { get; set; }
     }
 }

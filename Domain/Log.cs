@@ -2,18 +2,17 @@
 
 namespace Domain
 {
-    public class Log : DomainBase
+    public class Log : Entity
     {
-        public DateTime CompletedDate { get; set; }
-        public int Weight { get; set; }
-        public int Reps { get; set; }
-        public int Sets { get; set; }
+        public virtual DateTime CompletedDate { get; set; }
+        public virtual int Weight { get; set; }
+        public virtual int Reps { get; set; }
+        public virtual int Sets { get; set; }
 
 
         //Use object instead of ids
         //If app runs slowly then convert nested models to ids
-        public Exercise Exercise { get; set; }
-
-        public int UserId { get; set; }
+        public virtual Exercise Exercise { get; set; }
+        public virtual int UserId { get; set; }
     }
 }

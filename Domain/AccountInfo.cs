@@ -1,10 +1,10 @@
 ﻿namespace Domain
 {
-    public class AccountInfo : DomainBase
+    public class AccountInfo : Entity
     {
-        public string EmailAddress { get; set; }
+        public virtual string EmailAddress { get; set; }
         //TODO: should be encrypted
-        public string Password { get; set; }
+        public virtual string Password { get; set; }
 
     }
 }

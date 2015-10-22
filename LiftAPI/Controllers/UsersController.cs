@@ -1,9 +1,9 @@
 ﻿using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using APIModels;
 using LiftAPI.Util;
-using RepositoryService;
+using RepositoryService.User;
+using Resources;
 
 namespace LiftAPI.Controllers
 {
@@ -29,6 +29,7 @@ namespace LiftAPI.Controllers
         [Route("{id:int}")]
         public HttpResponseMessage GetUser(int id)
         {
+            _service.Get(id);
             return Request.CreateResponse(HttpStatusCode.OK, mockData.User);
         }
 

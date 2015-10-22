@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace APIModels
+namespace Resources
 {
     public class LogResource : ResourceBase
     {

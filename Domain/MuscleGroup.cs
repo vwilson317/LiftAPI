@@ -1,6 +1,6 @@
 ﻿namespace Domain
 {
-    public class MuscleGroup : DomainBase
+    public class MuscleGroup : NamedEntity
     {
 
     }

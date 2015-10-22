@@ -1,6 +1,6 @@
 ﻿using System;
-using APIModels;
 using Domain;
+using Resources;
 
 namespace RepositoryService.Workout
 {
@@ -16,7 +16,7 @@ namespace RepositoryService.Workout
             throw new NotImplementedException();
         }
 
-        public LogResource CreateModel(WorkoutRoutine entity)
+        public LogResource CreateResource(WorkoutRoutine entity)
         {
             throw new NotImplementedException();
         }

@@ -1,9 +1,9 @@
 ﻿using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using APIModels;
 using LiftAPI.Util;
-using RepositoryService;
+using RepositoryService.Exercise;
+using Resources;
 
 namespace LiftAPI.Controllers
 {

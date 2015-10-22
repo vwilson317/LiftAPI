@@ -1,6 +1,5 @@
 ﻿using System;
-using APIModels;
-using Domain;
+using Resources;
 
 namespace RepositoryService.User
 {
@@ -16,7 +15,7 @@ namespace RepositoryService.User
             throw new NotImplementedException();
         }
 
-        public UserResource CreateModel(Domain.User entity)
+        public UserResource CreateResource(Domain.User entity)
         {
             throw new NotImplementedException();
         }

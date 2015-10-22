@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using APIModels;
+using System.Linq;
 using Repository;
-using RepositoryService.Workout;
+using Resources;
 
 namespace RepositoryService.Log
 {
@@ -13,21 +12,26 @@ namespace RepositoryService.Log
 
     public class LogRepositoryService : ILogRepositoryService
     {
-        private ILogRepository _repo;
+        private IRepository<Domain.Log, object> _repo;
         private ILogMapper _mapper;
 
-        public LogRepositoryService(ILogRepository repo, ILogMapper mapper)
+        public LogRepositoryService(IRepository<Domain.Log, object> repo, ILogMapper mapper)
         {
             _repo = repo;
             _mapper = mapper;
         }
 
-        public IEnumerable<LogResource> GetAll()
+        public void Create(LogResource entity)
         {
             throw new NotImplementedException();
         }
 
-        public LogResource Get(int id)
+        public void Update(LogResource entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Delete(LogResource entity)
         {
             throw new NotImplementedException();
         }
@@ -37,7 +41,17 @@ namespace RepositoryService.Log
             throw new NotImplementedException();
         }
 
-        public LogResource Update(int id)
+        public void SaveOrUpdate(LogResource entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public LogResource Get(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IQueryable<LogResource> GetAll()
         {
             throw new NotImplementedException();
         }

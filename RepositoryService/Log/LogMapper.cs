@@ -1,22 +1,21 @@
 ﻿using System;
-using APIModels;
-using Domain;
+using Resources;
 
-namespace RepositoryService.Workout
+namespace RepositoryService.Log
 {
-    public interface ILogMapper : IMapper<WorkoutRoutine, LogResource>
+    public interface ILogMapper : IMapper<Domain.Log, LogResource>
     {
 
     }
 
     public class LogMapper : ILogMapper
     {
-        public WorkoutRoutine CreateEntity(LogResource model)
+        public Domain.Log CreateEntity(LogResource model)
         {
             throw new NotImplementedException();
         }
 
-        public LogResource CreateModel(WorkoutRoutine entity)
+        public LogResource CreateResource(Domain.Log entity)
         {
             throw new NotImplementedException();
         }

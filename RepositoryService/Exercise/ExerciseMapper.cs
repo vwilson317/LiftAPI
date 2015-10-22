@@ -1,7 +1,5 @@
 ﻿using System;
-using APIModels;
-using Repository;
-using RepositoryService.Workout;
+using Resources;
 
 namespace RepositoryService.Exercise
 {
@@ -12,12 +10,10 @@ namespace RepositoryService.Exercise
 
     public class ExerciseMapper : IExerciseMapper
     {
-        private IExerciseRepository _repo;
         private IExerciseMapper _mapper;
 
-        public ExerciseMapper(IExerciseRepository repo, IExerciseMapper mapper)
+        public ExerciseMapper(IExerciseMapper mapper)
         {
-            _repo = repo;
             _mapper = mapper;
         }
 
@@ -26,7 +22,7 @@ namespace RepositoryService.Exercise
             throw new NotImplementedException();
         }
 
-        public ExerciseResource CreateModel(Domain.Exercise entity)
+        public ExerciseResource CreateResource(Domain.Exercise entity)
         {
             throw new NotImplementedException();
         }

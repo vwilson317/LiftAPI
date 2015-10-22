@@ -1,12 +1,16 @@
-﻿using System.Collections.Generic;
+﻿using System.Linq;
 
 namespace RepositoryService
 {
-    public interface IRepositoryBaseService<T>
+    public interface IRepositoryBaseService<TEntity>
     {
-        IEnumerable<T> GetAll();
-        T Get(int id);
+        void Create(TEntity entity);
+        void Update(TEntity entity);
+        void Delete(TEntity entity);
         void Delete(int id);
-        T Update(int id);
+        void SaveOrUpdate(TEntity entity);
+
+        TEntity Get(int id);
+        IQueryable<TEntity> GetAll();
     }
 }

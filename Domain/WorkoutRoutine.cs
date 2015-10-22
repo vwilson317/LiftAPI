@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Domain
 {
-    public class WorkoutRoutine : DomainBase
+    public class WorkoutRoutine : NamedEntity
     {
         public List<ConfiguredExercise> ConfiguredExercises { get; set; }
         //value will determine where the Workout Routine will be displayed in the list

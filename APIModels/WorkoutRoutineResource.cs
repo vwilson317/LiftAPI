@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace APIModels
+namespace Resources
 {
     public class WorkoutRoutineResource : ResourceBase
     {

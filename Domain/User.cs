@@ -1,8 +1,8 @@
 ﻿namespace Domain
 {
-    public class User : NamedDomainObj
+    public class User : NamedEntity
     {
-        public PreferenceSetting PreferenceSetting { get; set; }
-        public AccountInfo AccountInfo { get; set; }
+        public virtual PreferenceSetting PreferenceSetting { get; set; }
+        public virtual AccountInfo AccountInfo { get; set; }
     }
 }

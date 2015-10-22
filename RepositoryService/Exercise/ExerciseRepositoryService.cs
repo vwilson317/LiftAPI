@@ -1,8 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using APIModels;
+using System.Linq;
+using Repository;
+using Resources;
 
-namespace RepositoryService
+namespace RepositoryService.Exercise
 {
     public interface IExerciseRepositoryService : IRepositoryBaseService<ExerciseResource>
     {
@@ -11,13 +12,26 @@ namespace RepositoryService
 
     public class ExerciseRepositoryService : IExerciseRepositoryService
     {
+        private IRepository<Domain.Exercise, object> _repo;
+        private IMapper<Domain.Exercise, ExerciseResource> _mapper;
 
-        public IEnumerable<ExerciseResource> GetAll()
+        public ExerciseRepositoryService(IRepository<Domain.Exercise, object> repo, IMapper<Domain.Exercise, ExerciseResource> mapper)
+        {
+            _repo = repo;
+            _mapper = mapper;
+        }
+
+        public void Create(ExerciseResource entity)
         {
             throw new NotImplementedException();
         }
 
-        public ExerciseResource Get(int id)
+        public void Update(ExerciseResource entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Delete(ExerciseResource entity)
         {
             throw new NotImplementedException();
         }
@@ -27,7 +41,17 @@ namespace RepositoryService
             throw new NotImplementedException();
         }
 
-        public ExerciseResource Update(int id)
+        public void SaveOrUpdate(ExerciseResource entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ExerciseResource Get(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IQueryable<ExerciseResource> GetAll()
         {
             throw new NotImplementedException();
         }

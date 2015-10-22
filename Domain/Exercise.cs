@@ -1,7 +1,7 @@
 ﻿namespace Domain
 {
-    public class Exercise : DomainBase
+    public class Exercise : NamedEntity
     {
-        public MuscleGroup MuscleGroupType { get; set; }
+        public virtual MuscleGroup MuscleGroupType { get; set; }
     }
 }

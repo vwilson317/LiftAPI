@@ -1,8 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using APIModels;
+using Domain;
 using Repository;
+using Resources;
 
 namespace RepositoryService.Workout
 {
@@ -13,27 +13,35 @@ namespace RepositoryService.Workout
 
     public class WorkoutRepositoryService : IWorkoutRepositoryService
     {
-        private IWorkoutRepository _repo;
+        private IRepository<WorkoutRoutine, object> _repo;
         private IWorkoutMapper _mapper;
 
-        public WorkoutRepositoryService(IWorkoutRepository repo, IWorkoutMapper mapper)
+        public WorkoutRepositoryService(IRepository<WorkoutRoutine,object> repo, IWorkoutMapper mapper)
         {
             _repo = repo;
             _mapper = mapper;
         }
 
-        public IEnumerable<LogResource> GetAll()
+        public IQueryable<LogResource> GetAll()
         {
             var workoutEntities = _repo.GetAll();
-            var workoutModels = workoutEntities.Select(_mapper.CreateModel).ToList();
+            var workoutModels = workoutEntities.Select(_mapper.CreateResource).AsQueryable();
             return workoutModels;
         }
 
-        public LogResource Get(int id)
+        public void Create(LogResource entity)
         {
-            var workoutEntity = _repo.Get(id);
-            var workoutModels = _mapper.CreateModel(workoutEntity);
-            return workoutModels;
+            throw new NotImplementedException();
+        }
+
+        public void Update(LogResource entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Delete(LogResource entity)
+        {
+            throw new NotImplementedException();
         }
 
         public void Delete(int id)
@@ -41,9 +49,16 @@ namespace RepositoryService.Workout
             throw new NotImplementedException();
         }
 
-        public LogResource Update(int id)
+        public void SaveOrUpdate(LogResource entity)
         {
             throw new NotImplementedException();
+        }
+
+        public LogResource Get(int id)
+        {
+            var workoutEntity = _repo.Get(id);
+            var workoutModels = _mapper.CreateResource(workoutEntity);
+            return workoutModels;
         }
     }
 }

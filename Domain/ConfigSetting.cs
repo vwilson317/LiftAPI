@@ -2,11 +2,11 @@
 
 namespace Domain
 {
-    public class PreferenceSetting : DomainBase
+    public class PreferenceSetting : Entity
     {
-        public char WeightUnits { get; set; }
-        public DayOfWeek WorkoutStartOfWeek { get; set; }
-        //FK
-        public int UserId { get; set; }
+        public virtual char WeightUnits { get; set; }
+        public virtual DayOfWeek WorkoutStartOfWeek { get; set; }
+        //FK   
+        public virtual int UserId { get; set; }
     }
 }
