@@ -1,21 +1,22 @@
 ﻿using System;
 using System.Linq;
 using Repository;
+using RepositoryService.Common;
 using Resources;
 
 namespace RepositoryService.Log
 {
-    public interface ILogRepositoryService : IRepositoryBaseService<LogResource>
+    public interface ILogRepositoryService : IRepositoryService<LogResource>
     {
         
     }
 
     public class LogRepositoryService : ILogRepositoryService
     {
-        private IRepository<Domain.Log, object> _repo;
+        private IRepository<Domain.Log> _repo;
         private ILogMapper _mapper;
 
-        public LogRepositoryService(IRepository<Domain.Log, object> repo, ILogMapper mapper)
+        public LogRepositoryService(IRepository<Domain.Log> repo, ILogMapper mapper)
         {
             _repo = repo;
             _mapper = mapper;

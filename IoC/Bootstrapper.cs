@@ -20,6 +20,7 @@ namespace IoC
             builder.RegisterAssemblyTypes(typeof (Domain.IocAssemblyStarter).Assembly).AsImplementedInterfaces();
             builder.RegisterAssemblyTypes(typeof (Repository.IocAssemblyStarter).Assembly).AsImplementedInterfaces();
             builder.RegisterAssemblyTypes(typeof (RepositoryService.IocAssemblyStarter).Assembly).AsImplementedInterfaces();
+            builder.RegisterAssemblyTypes(typeof (Resources.IocAssemblyStarter).Assembly).AsImplementedInterfaces();
 
             return builder.Build();
         }

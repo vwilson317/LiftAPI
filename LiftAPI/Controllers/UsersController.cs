@@ -7,7 +7,7 @@ using Resources;
 
 namespace LiftAPI.Controllers
 {
-    [RoutePrefix("api/users")]
+    [RoutePrefix("v1/users")]
     public class UsersController : ApiController
     {
         private MockData mockData = new MockData();
@@ -18,6 +18,14 @@ namespace LiftAPI.Controllers
             _service = service;
         }
 
+        [HttpGet]
+        [Route("")]
+        public HttpResponseMessage Get()
+        {
+            var data = _service.GetAll();
+            return Request.CreateResponse(HttpStatusCode.OK, data);
+        }
+       
         [HttpGet]
         [Route("{name:alpha}")]
         public HttpResponseMessage GetUser(string name)

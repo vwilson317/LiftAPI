@@ -48,11 +48,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IocAssemblyStarter.cs" />
-    <Compile Include="NHibernateRepository.cs" />
+    <Compile Include="IUnitOfWork.cs" />
+    <Compile Include="Mappings\UserMap.cs" />
+    <Compile Include="Repository.cs" />
     <Compile Include="LogRepository.cs" />
+    <Compile Include="UnitOfWork.cs" />
     <Compile Include="UserRepository.cs" />
     <Compile Include="ExerciseRepository.cs" />
-    <Compile Include="WorkoutRepository.cs" />
+    <Compile Include="WorkoutRountineRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -74,9 +77,6 @@
       <Project>{1e8291b5-616c-46e2-a2c2-5ca83b9ebe6e}</Project>
       <Name>NHibernateImp</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Mappings\User.hbm.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

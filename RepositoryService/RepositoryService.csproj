@@ -39,18 +39,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\RepositoryService.cs" />
     <Compile Include="Exercise\ExerciseRepositoryService.cs" />
     <Compile Include="Exercise\ExerciseMapper.cs" />
     <Compile Include="IMapper.cs" />
     <Compile Include="IocAssemblyStarter.cs" />
-    <Compile Include="IRepositoryServiceBase.cs" />
+    <Compile Include="Common\IRepositoryService.cs" />
     <Compile Include="Log\LogRepositoryService.cs" />
     <Compile Include="Log\LogMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User\UserRepositoryService.cs" />
     <Compile Include="User\UserMapper.cs" />
-    <Compile Include="Workout\WorkoutMapper.cs" />
+    <Compile Include="Workout\WorkoutRoutineMapper.cs" />
     <Compile Include="Workout\WorkoutRepositoryService.cs" />
+    <Compile Include="Workout\WorkoutRoutineRepositoryService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\APIModels\Resources.csproj">

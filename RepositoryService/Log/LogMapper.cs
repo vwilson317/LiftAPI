@@ -10,12 +10,12 @@ namespace RepositoryService.Log
 
     public class LogMapper : ILogMapper
     {
-        public Domain.Log CreateEntity(LogResource model)
+        public Domain.Log Map(LogResource resource)
         {
             throw new NotImplementedException();
         }
 
-        public LogResource CreateResource(Domain.Log entity)
+        public LogResource Map(Domain.Log entity)
         {
             throw new NotImplementedException();
         }

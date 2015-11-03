@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resources", "APIModels\Reso
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoC", "IoC\IoC.csproj", "{4834FF71-5A51-490F-97E3-F0F05ABEC7DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHibernateImp", "NHibernateImp\NHibernateImp.csproj", "{1E8291B5-616C-46E2-A2C2-5CA83B9EBE6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{4834FF71-5A51-490F-97E3-F0F05ABEC7DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4834FF71-5A51-490F-97E3-F0F05ABEC7DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4834FF71-5A51-490F-97E3-F0F05ABEC7DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E8291B5-616C-46E2-A2C2-5CA83B9EBE6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E8291B5-616C-46E2-A2C2-5CA83B9EBE6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E8291B5-616C-46E2-A2C2-5CA83B9EBE6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E8291B5-616C-46E2-A2C2-5CA83B9EBE6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

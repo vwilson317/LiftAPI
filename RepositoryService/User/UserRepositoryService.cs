@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Linq;
 using Repository;
+using RepositoryService.Common;
 using Resources;
 
 namespace RepositoryService.User
 {
-    public interface IUserRepositoryService : IRepositoryBaseService<UserResource>
+    public interface IUserRepositoryService : IRepositoryService<UserResource>
     {
         
     }
@@ -13,9 +14,9 @@ namespace RepositoryService.User
     public class UserRepositoryService : IUserRepositoryService
     {
         private IUserMapper _mapper;
-        private IRepository<Domain.User, object> _repo;
+        private IRepository<Domain.User> _repo;
 
-        public UserRepositoryService(IRepository<Domain.User,object> repo, IUserMapper mapper)
+        public UserRepositoryService(IRepository<Domain.User> repo, IUserMapper mapper)
         {
             _repo = repo;
             _mapper = mapper;
@@ -53,7 +54,7 @@ namespace RepositoryService.User
 
         public IQueryable<UserResource> GetAll()
         {
-            throw new NotImplementedException();
+            return _repo.GetAll().Select(_mapper.Map).AsQueryable();
         }
     }
 }

@@ -1,13 +1,13 @@
-﻿using FluentNHibernate.Cfg;
+﻿using System.Configuration;
+using Domain;
+using FluentNHibernate.Cfg;
 using FluentNHibernate.Cfg.Db;
 using NHibernate;
 using NHibernate.Context;
-using System.Configuration;
-using Domain;
 using NHibernate.Tool.hbm2ddl;
 
 //Reference http://www.codeproject.com/Articles/687107/NHibernate-Setup-for-ASP-NET
-namespace LiftAPI
+namespace NHibernateImp
 {
     /// <summary>
     /// Here basic NHibernate manipulation methods are implemented.
@@ -26,9 +26,6 @@ namespace LiftAPI
             {
                 if (_sessionFactory == null)
                 {
-                    //Configuration configuration = new Configuration();
-                    //configuration.Configure();
-
                     // build a Session Factory
                     _sessionFactory = CreateSessionFactory();
                 }
@@ -45,12 +42,7 @@ namespace LiftAPI
                 .ShowSql())
               .Mappings(m =>
                   m.FluentMappings
-                  .AddFromAssemblyOf<NamedEntity>()
-                  .ExportTo(@"\bin\nHibernateMappings"))
-                  //TODO: Configure auto mapping
-                  //        m.AutoMappings.Add(
-                  //             AutoPersistenceModel.MapEntitiesFromAssembly<Domain>()
-                  //.Where(type => type.Namspace.EndsWith("Auto")));
+                  .AddFromAssemblyOf<NamedEntity>())
               .ExposeConfiguration(BuildSchema)
               .BuildSessionFactory();
         }
@@ -59,8 +51,8 @@ namespace LiftAPI
         {
             // this NHibernate tool takes a configuration (with mapping info in)
             // and exports a database schema from it
-            new SchemaExport(config)
-              .Create(false, true);
+            new SchemaUpdate(config)
+.Execute(false, true);
         }
 
         /// <summary>

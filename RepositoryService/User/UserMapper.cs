@@ -10,12 +10,12 @@ namespace RepositoryService.User
 
     public class UserMapper : IUserMapper
     {
-        public Domain.User CreateEntity(UserResource model)
+        public Domain.User Map(UserResource resource)
         {
             throw new NotImplementedException();
         }
 
-        public UserResource CreateResource(Domain.User entity)
+        public UserResource Map(Domain.User entity)
         {
             throw new NotImplementedException();
         }

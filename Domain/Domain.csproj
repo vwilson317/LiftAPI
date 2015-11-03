@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="ConfigSetting.cs" />
     <Compile Include="ConfiguredExercise.cs" />
+    <Compile Include="Mappings\UserMap.cs" />
     <Compile Include="NamedEntity.cs" />
     <Compile Include="IocAssemblyStarter.cs" />
     <Compile Include="Log.cs" />
@@ -73,9 +74,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="hibernate.cfg.xml" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">

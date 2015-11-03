@@ -1,7 +1,7 @@
 ﻿using NHibernate;
 
 //Reference http://www.codeproject.com/Articles/687107/NHibernate-Setup-for-ASP-NET
-namespace LiftAPI
+namespace NHibernateImp
 {
     public class SessionHelper
     {

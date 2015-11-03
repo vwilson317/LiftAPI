@@ -1,8 +1,12 @@
-﻿namespace RepositoryService
+﻿using Domain;
+
+namespace RepositoryService
 {
-    public interface IMapper<Entity, Model>
+    public interface IMapper<TEntity, TResource>
+        where TEntity : Entity
+        where TResource : class
     {
-        Entity CreateEntity(Model model);
-        Model CreateResource(Entity entity);
+        TEntity Map(TResource resource);
+        TResource Map(TEntity entity);
     }
 }

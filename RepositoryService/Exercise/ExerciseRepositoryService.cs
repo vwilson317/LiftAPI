@@ -1,21 +1,22 @@
 ﻿using System;
 using System.Linq;
 using Repository;
+using RepositoryService.Common;
 using Resources;
 
 namespace RepositoryService.Exercise
 {
-    public interface IExerciseRepositoryService : IRepositoryBaseService<ExerciseResource>
+    public interface IExerciseRepositoryService : IRepositoryService<ExerciseResource>
     {
         
     }
 
     public class ExerciseRepositoryService : IExerciseRepositoryService
     {
-        private IRepository<Domain.Exercise, object> _repo;
+        private IRepository<Domain.Exercise> _repo;
         private IMapper<Domain.Exercise, ExerciseResource> _mapper;
 
-        public ExerciseRepositoryService(IRepository<Domain.Exercise, object> repo, IMapper<Domain.Exercise, ExerciseResource> mapper)
+        public ExerciseRepositoryService(IRepository<Domain.Exercise> repo, IMapper<Domain.Exercise, ExerciseResource> mapper)
         {
             _repo = repo;
             _mapper = mapper;

@@ -17,12 +17,12 @@ namespace RepositoryService.Exercise
             _mapper = mapper;
         }
 
-        public Domain.Exercise CreateEntity(ExerciseResource model)
+        public Domain.Exercise Map(ExerciseResource resource)
         {
             throw new NotImplementedException();
         }
 
-        public ExerciseResource CreateResource(Domain.Exercise entity)
+        public ExerciseResource Map(Domain.Exercise entity)
         {
             throw new NotImplementedException();
         }

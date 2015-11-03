@@ -8,26 +8,28 @@ using Resources;
 
 namespace LiftAPI.Controllers
 {
+    [RoutePrefix("v1")]
     public class WorkoutsController : ApiController
     {
         private MockData mockData = new MockData();
-        private IWorkoutRepositoryService _service;
+        private IWorkoutRoutineRepositoryService _service;
 
-        public WorkoutsController(IWorkoutRepositoryService service)
+        public WorkoutsController(IWorkoutRoutineRepositoryService service)
         {
             _service = service;
         }
 
         [HttpGet]
-        [Route("api/users/{id:int}/workouts")]
+        [Route("users/{id:int}/workouts")]
         public HttpResponseMessage GetUserWorkout(int id)
         {
             var workouts = mockData.Workouts;
+            var test = _service.Get(id);
             return Request.CreateResponse(HttpStatusCode.OK, workouts);
         }
 
         [HttpPost]
-        [Route("api/users/{id:int}/workouts")]
+        [Route("users/{id:int}/workouts")]
         public HttpResponseMessage CreateWorkout([FromBody] WorkoutRoutineResource workout)
         {
             //Simulates creating a new workout
@@ -37,7 +39,7 @@ namespace LiftAPI.Controllers
         }
 
         [HttpPut]
-        [Route("api/users/{id:int}/workouts/{workoutId:int}")]
+        [Route("users/{id:int}/workouts/{workoutId:int}")]
         public HttpResponseMessage UpdateWorkout([FromBody] WorkoutRoutineResource workout)
         {
             //Simulates updating a workout

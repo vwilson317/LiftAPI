@@ -2,7 +2,14 @@
 
 namespace Repository
 {
-    public class ExerciseRepository : NHibernateRepository<Exercise, object>
+    public interface IExerciseRepository : IRepository<Exercise>
     {
+
+    }
+    public class ExerciseRepository : Repository<Exercise>, IExerciseRepository
+    {
+        public ExerciseRepository(IUnitOfWork unitOfWork) : base(unitOfWork)
+        {
+        }
     }
 }
