@@ -15,14 +15,13 @@ namespace RepositoryService.Common
         where TResource : class
         where TMapper : IMapper<TEntity, TResource>
     {
+        public TRepository Repository { get; set; }
+        public TMapper Mapper { get; set; }
         protected RepositoryService(TRepository repository, TMapper mapper)
         {
             Repository = repository;
             Mapper = mapper;
         }
-
-        public TRepository Repository { get; set; }
-        public TMapper Mapper { get; set; }
 
         public void Create(TResource entity)
         {

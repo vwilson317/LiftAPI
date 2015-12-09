@@ -43,16 +43,16 @@ namespace NHibernateImp
               .Mappings(m =>
                   m.FluentMappings
                   .AddFromAssemblyOf<NamedEntity>())
-              .ExposeConfiguration(BuildSchema)
+              //.ExposeConfiguration(BuildSchema)//TODO:Revist
               .BuildSessionFactory();
         }
 
         private static void BuildSchema(NHibernate.Cfg.Configuration config)
         {
-            // this NHibernate tool takes a configuration (with mapping info in)
-            // and exports a database schema from it
-            new SchemaUpdate(config)
-.Execute(false, true);
+            new SchemaExport(config).Execute(false, true, false);
+
+            //new SchemaUpdate(config)
+            //    .Execute(false, true);
         }
 
         /// <summary>

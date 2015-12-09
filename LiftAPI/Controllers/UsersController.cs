@@ -8,22 +8,20 @@ using Resources;
 namespace LiftAPI.Controllers
 {
     [RoutePrefix("v1/users")]
-    public class UsersController : ApiController
+    public class UsersController : BaseController<IUserRepositoryService, UserResource>
     {
         private MockData mockData = new MockData();
-        private IUserRepositoryService _service;
 
         public UsersController(IUserRepositoryService service)
+            : base(service)
         {
-            _service = service;
         }
 
         [HttpGet]
         [Route("")]
-        public HttpResponseMessage Get()
+        public new HttpResponseMessage Get()
         {
-            var data = _service.GetAll();
-            return Request.CreateResponse(HttpStatusCode.OK, data);
+            return base.Get();
         }
        
         [HttpGet]
@@ -37,8 +35,7 @@ namespace LiftAPI.Controllers
         [Route("{id:int}")]
         public HttpResponseMessage GetUser(int id)
         {
-            _service.Get(id);
-            return Request.CreateResponse(HttpStatusCode.OK, mockData.User);
+            return base.Get(id);
         }
 
         [HttpPost]

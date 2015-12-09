@@ -6,7 +6,7 @@ namespace Domain.Mappings
     {
         public UserMap()
         {
-            Id(x => x.Id);
+            Id(x => x.Id).Not.Nullable();
             Map(x => x.Name);
         }
     }

@@ -12,12 +12,20 @@ namespace RepositoryService.User
     {
         public Domain.User Map(UserResource resource)
         {
-            throw new NotImplementedException();
+            return new Domain.User
+            {
+                Id = resource.Id,
+                Name = resource.Name
+            };
         }
 
         public UserResource Map(Domain.User entity)
         {
-            throw new NotImplementedException();
+            return new UserResource
+            {
+                Id = entity.Id,
+                Name = entity.Name
+            };
         }
     }
 }
